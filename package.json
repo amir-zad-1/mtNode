@@ -1,0 +1,37 @@
+{
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "description": "API Gateway",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "./node_modules/typescript/bin/tsc",
+    "clean": "rm -fr ./dist",
+    "itest": "./node_modules/mocha/bin/mocha --require ts-node/register \"test/integration/**/*.ts\" ",
+    "run": "node dist/server.js",
+    "start": "node ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://amir_hz@bitbucket.org/hypboxcloud/api-gateway.git"
+  },
+  "author": "hypBox.com",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/hypboxcloud/api-gateway#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "express": "^4.16.4",
+    "log4js": "^4.1.0",
+    "logjs": "^0.1.5",
+    "mocha": "^6.1.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^12.0.0",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  }
+}
